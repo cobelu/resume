@@ -1,0 +1,206 @@
+%------------------------- % Resume in Latex % Author : Jake 
+Gutierrez % Based off of: https://github.com/sb2nov/resume % 
+License : MIT %------------------------ 
+\documentclass[letterpaper,11pt]{article} 
+\usepackage{latexsym} \usepackage[empty]{fullpage} 
+\usepackage{titlesec} \usepackage{marvosym} 
+\usepackage[usenames,dvipsnames]{color} \usepackage{verbatim} 
+\usepackage{enumitem} \usepackage[hidelinks]{hyperref} 
+\usepackage{fancyhdr} \usepackage[english]{babel} 
+\usepackage{tabularx} \input{glyphtounicode} %----------FONT 
+OPTIONS---------- % sans-serif % 
+\usepackage[sfdefault]{FiraSans} % 
+\usepackage[sfdefault]{roboto} % 
+\usepackage[sfdefault]{noto-sans} % 
+\usepackage[default]{sourcesanspro} % serif % 
+\usepackage{CormorantGaramond} % \usepackage{charter} 
+\pagestyle{fancy} \fancyhf{} % clear all header and footer 
+fields \fancyfoot{} \renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} % Adjust margins % 
+\addtolength{\oddsidemargin}{-0.5in} % 
+\addtolength{\evensidemargin}{-0.5in} % 
+\addtolength{\textwidth}{1in} % 
+\addtolength{\topmargin}{-.5in} % 
+\addtolength{\textheight}{1.0in} % Adjust margins 
+\usepackage[textheight=700px, margin=0.75in]{geometry} % 
+Saving trees ;-) \urlstyle{same} \raggedbottom \raggedright 
+\setlength{\tabcolsep}{0in} % Sections formatting 
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Ensure that generate pdf is machine readable/ATS parsable 
+\pdfgentounicode=1 %------------------------- % Custom 
+commands \newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}} 
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$} 
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, 
+label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+%------------------------------------------- %%%%%% RESUME 
+STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%% \begin{document} 
+%----------HEADING---------- % 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r} % 
+\textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh 
+Bajaj}} & Email : 
+\href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\ 
+% 
+\href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} 
+& Mobile : +1-123-456-7890 \\ % \end{tabular*} \begin{center}
+    \textbf{\Huge \scshape Connor Luckett} \\ \vspace{1pt}
+    98 Elton St. Providence, RI 02906 $|$
+    \small (903) 821-4380 $|$
+    \href{mailto:cobelu@brown.edu}{\underline{cobelu@brown.edu}} 
+$|$
+    \href{https://cobelu.com/}{\underline{cobelu.com}} $|$
+    % 
+\href{https://github.com/cobelu}{\underline{github.com/cobelu}} 
+$|$
+    
+\href{https://www.linkedin.com/in/cobelu/}{\underline{linkedin.com/in/cobelu}} 
+\end{center} %-----------EDUCATION----------- 
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University}{Aug. 2019 -- May 2021}
+      {Sc.M. of Computer Science (3.92)}{Providence, RI}
+    \resumeSubheading
+      {Austin College}{Aug. 2015 -- May 2019}
+      {B.A. (3.99) of Computer Science (4.0) and Mathematics 
+(4.0), Minor in Physics}{Sherman, TX}
+    % \resumeSubheading
+    % {Sherman High School}{Aug. 2015 -- May 2019}
+    % {High School Diploma (4.0)}{Sherman, TX}
+  \resumeSubHeadingListEnd %-----------EXPERIENCE----------- 
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+      {Graduate Teaching Assistant}{Jul. 2021 -- Present}
+      {Brown University}{Providence, RI}
+      \resumeItemListStart
+        \resumeItem{Led the Database Management Systems 
+course.}
+        \resumeItem{Oversaw a team of 8 teaching assistants 
+for an 80-student course.}
+        \resumeItem{Lectured seminars to explore modern 
+trends in database design and research.}
+        \resumeItem{Worked with Head TAs to revitalize 
+severely outdated course materials.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Doctoral Researcher}{May 2019 -- Present}
+      {Brown University}{Providence, RI}
+      \resumeItemListStart
+        \resumeItem{Developed a novel tool to help adapt 
+legacy systems for GDPR compliance (ICDE ‘21).}
+        \resumeItem{Investigated practicality of big-data 
+applications on wimpy clusters (ICDE ‘21).}
+        \resumeItem{Created a framework to easily compare 
+algorithms for matrix factorization in recommendation 
+systems.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Undergraduate Researcher}{June 2018 -- Aug. 2018}
+      {University of Rochester}{Rochester, NY}
+      \resumeItemListStart
+        \resumeItem{Analyzed road paths from OpenStreetMap 
+data across a selection of U.S. cities.}
+        \resumeItem{Presented results in a public speech and 
+poster session.}
+        \resumeItem{Engaged with local high-risk youth to 
+encourage STEM participation.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Student Team Leader}{Jan. 2018 -- May 2018}
+      {Austin College}{Sherman, TX}
+      \resumeItemListStart
+        \resumeItem{Oversaw a students team in assisting 
+Meals On Wheels of Tarrant County.}
+        \resumeItem{Prototyped an iPad application to assist 
+organization of roughly 6,000 clients.}
+        \resumeItem{Gathered location data using Google Maps 
+APIs.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+       {Mathematics Tutor}{Sept. 2017 -- Dec. 2017}
+       {Austin College}{Sherman, TX}
+       \resumeItemListStart
+         \resumeItem{Provided weekly one-to-one instruction 
+in middle and high school mathematics.}
+         \resumeItem{Funded by a National Science Foundation 
+Noyce Grant.}
+       \resumeItemListEnd
+      
+    \resumeSubheading
+      {Seasonal Teller}{June 2015 -- Jan. 2018}
+      {Independent Financial}{Sherman, TX}
+      \resumeItemListStart
+        \resumeItem{Provided account services at the 
+corporation’s most active branch.}
+        \resumeItem{Received training in Bank Secrecy Act and 
+OFAC.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd % %-----------PROJECTS----------- 
+% \section{Projects} % \resumeSubHeadingListStart % 
+\resumeProjectHeading % 
+{\textbf{\href{https://github.com/cobelu/PyWander}{\underline{Wander}}} 
+$|$ \emph{Python, Ray}}{Fall 2020 -- Present} % 
+\resumeItemListStart % \resumeItem{Developing a unified 
+framework for distributed stochastic gradient descent.} % 
+\resumeItem{Evaluating performance of various partitioning 
+and scheduling algorithms in a fairer manner.} % 
+\resumeItemListEnd % \resumeProjectHeading % 
+{\textbf{\href{https://github.com/cobelu/odlaw}{\underline{Odlaw}} 
+$|$ % } $|$ \emph{Python, NetworkX, pandas, SQLAlchemy}}{Fall 
+2019} % \resumeItemListStart % \resumeItem{Developed a 
+command line application to assist with retroactive GDPR 
+compliance.} % \resumeItem{Allowed bolt-on functionality for 
+access, portability, and erasure in relational back-ends.} % 
+\resumeItem{Wrote database connectors to PostgreSQL, MySQL, 
+and SQLite.} % \resumeItem{Presented demonstration to 
+Privacy-Conscious Computer Systems course.} % 
+\resumeItem{Repackaged with a front-end and accepted as a 
+demo for ICDE 2021.} % \resumeItemListEnd % 
+\resumeSubHeadingListEnd % %-----------PROGRAMMING 
+SKILLS----------- \section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Courses}{: Artificial Intelligence, Data 
+Science, Database Systems, Design and Analysis of Algorithms, 
+Distributed Systems, Microservices (current) 
+Privacy-Conscious Systems, Probability Theory} \\
+     \textbf{Languages}{: C, Go, Java, Python, R, Scala, SQL, 
+Swift} \\
+     \textbf{Libraries}{: gRPC, pandas, Matplotlib, NumPy, 
+Spark, SQLAlchemy} \\
+     \textbf{Interests}{: CAM, Composites, Homebuilt 
+Aircraft, Lathe, Mill, Private Pilot, 3D Printing}
+ }}
+ \end{itemize} %-------------------------------------------
+\end{document}
